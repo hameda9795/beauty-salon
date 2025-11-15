@@ -1,0 +1,276 @@
+/* Head Spa Page Styles */
+
+.intro-section {
+  background-color: var(--background-light);
+}
+
+.intro-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro-content h2 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-md);
+}
+
+.lead {
+  font-size: var(--font-size-medium);
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  line-height: 1.8;
+}
+
+.intro-content p {
+  font-size: var(--font-size-base);
+  color: var(--secondary-color);
+  line-height: 1.8;
+  margin-bottom: var(--spacing-md);
+}
+
+/* Benefits Section */
+.benefits-section {
+  background-color: var(--background-gray);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.benefit-card {
+  background: var(--background-light);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+  text-align: center;
+  transition: transform var(--transition-medium);
+  border: 2px solid transparent;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-color);
+  box-shadow: var(--shadow-md);
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.benefit-card h3 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+.benefit-card p {
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+/* Services Detail Section */
+.services-detail-section {
+  background-color: var(--background-light);
+}
+
+.services-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.service-detail-card {
+  background: var(--background-light);
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-medium);
+}
+
+.service-detail-card:hover {
+  border-color: var(--accent-color);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+}
+
+.service-header {
+  margin-bottom: var(--spacing-md);
+}
+
+.service-header h3 {
+  color: var(--primary-color);
+  font-size: var(--font-size-large);
+  margin-bottom: var(--spacing-sm);
+}
+
+.service-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.duration {
+  color: var(--secondary-color);
+  font-size: var(--font-size-small);
+}
+
+.price {
+  font-size: var(--font-size-large);
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.service-description {
+  color: var(--secondary-color);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+}
+
+.service-features {
+  margin-bottom: var(--spacing-md);
+  flex-grow: 1;
+}
+
+.service-features h4 {
+  color: var(--primary-color);
+  font-size: var(--font-size-base);
+  margin-bottom: var(--spacing-sm);
+}
+
+.service-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service-features li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+.service-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.service-detail-card .btn {
+  margin-top: auto;
+  text-align: center;
+}
+
+/* Video Section */
+.video-section {
+  background-color: var(--background-gray);
+}
+
+.video-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.video-placeholder {
+  background: var(--background-light);
+  border: 2px dashed var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-xl);
+  text-align: center;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+
+.video-placeholder p {
+  font-size: var(--font-size-base);
+  margin-top: var(--spacing-md);
+}
+
+/* FAQ Section */
+.faq-section {
+  background-color: var(--background-light);
+}
+
+.faq-list {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: var(--background-gray);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-md);
+  margin-bottom: var(--spacing-md);
+  border-left: 4px solid var(--accent-color);
+}
+
+.faq-question {
+  color: var(--primary-color);
+  font-size: var(--font-size-medium);
+  margin-bottom: var(--spacing-sm);
+}
+
+.faq-answer {
+  color: var(--secondary-color);
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: var(--text-light);
+}
+
+.cta-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  color: var(--text-light);
+  margin-bottom: var(--spacing-md);
+}
+
+.cta-content p {
+  font-size: var(--font-size-medium);
+  margin-bottom: var(--spacing-lg);
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+.btn-large {
+  padding: 1rem 2.5rem;
+  font-size: var(--font-size-medium);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

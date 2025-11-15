@@ -1,0 +1,145 @@
+/* Price List Page */
+
+.price-note {
+  background: linear-gradient(135deg, var(--accent-color) 0%, #C5A028 100%);
+  color: var(--text-dark);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-md);
+  margin-top: var(--spacing-lg);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.price-note p {
+  margin: 0.5rem 0;
+  font-size: var(--font-size-base);
+}
+
+.price-note strong {
+  font-weight: 700;
+}
+
+/* Price Tables Section */
+.price-tables-section {
+  background-color: var(--background-gray);
+}
+
+.price-category {
+  margin-bottom: var(--spacing-xl);
+  background: var(--background-light);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.category-title {
+  color: var(--primary-color);
+  font-size: var(--font-size-xlarge);
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 3px solid var(--accent-color);
+}
+
+.price-table {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md);
+  background: var(--background-gray);
+  transition: all var(--transition-fast);
+}
+
+.price-row:hover {
+  background: var(--background-light);
+  transform: translateX(5px);
+  box-shadow: var(--shadow-sm);
+}
+
+.service-name {
+  color: var(--primary-color);
+  font-weight: 500;
+  flex: 1;
+}
+
+.service-price {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: var(--font-size-medium);
+  white-space: nowrap;
+  margin-left: var(--spacing-md);
+}
+
+/* Policies Section */
+.policies-section {
+  background-color: var(--background-light);
+}
+
+.policies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.policy-card {
+  background: var(--background-gray);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-md);
+  border-top: 4px solid var(--accent-color);
+}
+
+.policy-card h3 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-medium);
+}
+
+.policy-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.policy-card li {
+  padding: 0.5rem 0;
+  color: var(--secondary-color);
+  position: relative;
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+.policy-card li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .price-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .service-price {
+    margin-left: 0;
+    font-size: var(--font-size-large);
+  }
+
+  .policies-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-title {
+    font-size: var(--font-size-large);
+  }
+}

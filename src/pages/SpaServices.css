@@ -1,0 +1,262 @@
+/* Spa Services Page */
+
+.massage-section {
+  background-color: var(--background-gray);
+}
+
+.massage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.massage-card {
+  background: var(--background-light);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  border: 2px solid var(--border-color);
+  transition: all var(--transition-medium);
+}
+
+.massage-card:hover {
+  border-color: var(--accent-color);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.massage-card h3 {
+  color: var(--primary-color);
+  font-size: var(--font-size-medium);
+  margin-bottom: var(--spacing-sm);
+}
+
+.massage-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.massage-details .duration {
+  color: var(--secondary-color);
+  font-size: var(--font-size-small);
+}
+
+.massage-details .price {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: var(--font-size-medium);
+}
+
+.massage-descriptions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.description-card {
+  background: var(--background-light);
+  padding: var(--spacing-lg);
+  border-left: 4px solid var(--accent-color);
+  border-radius: var(--border-radius-sm);
+}
+
+.description-card h3 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+.description-card p {
+  color: var(--secondary-color);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Body Treatments */
+.body-treatments-section {
+  background-color: var(--background-light);
+}
+
+.treatment-category {
+  margin-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.treatment-category:last-child {
+  border-bottom: none;
+}
+
+.treatment-category h3 {
+  color: var(--primary-color);
+  font-size: var(--font-size-xlarge);
+  margin-bottom: var(--spacing-sm);
+}
+
+.category-description {
+  color: var(--secondary-color);
+  font-size: var(--font-size-medium);
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.6;
+}
+
+.treatment-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.treatment-service-card {
+  background: var(--background-gray);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  border: 2px solid transparent;
+  transition: all var(--transition-medium);
+}
+
+.treatment-service-card:hover {
+  border-color: var(--accent-color);
+  transform: translateY(-3px);
+}
+
+.treatment-service-card h4 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+.service-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.service-info .duration {
+  color: var(--secondary-color);
+  font-size: var(--font-size-small);
+}
+
+.service-info .price {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: var(--font-size-large);
+}
+
+/* Waxing Section */
+.waxing-section {
+  background-color: var(--background-gray);
+}
+
+.wax-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.wax-card {
+  background: var(--background-light);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid var(--border-color);
+  transition: all var(--transition-fast);
+}
+
+.wax-card:hover {
+  border-color: var(--accent-color);
+  transform: translateX(5px);
+}
+
+.wax-area {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.wax-price {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: var(--font-size-medium);
+}
+
+.wax-info {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+/* Benefits Section */
+.benefits-section {
+  background-color: var(--background-light);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.benefit-item {
+  text-align: center;
+  padding: var(--spacing-md);
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.benefit-item h3 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+.benefit-item p {
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: var(--text-light);
+}
+
+.cta-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  color: var(--text-light);
+  margin-bottom: var(--spacing-md);
+}
+
+.cta-content p {
+  font-size: var(--font-size-medium);
+  margin-bottom: var(--spacing-lg);
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .massage-grid,
+  .treatment-services,
+  .wax-grid,
+  .massage-descriptions {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
