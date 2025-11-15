@@ -7,6 +7,9 @@ import HeadSpa from './pages/HeadSpa';
 import SpaServices from './pages/SpaServices';
 import Facial from './pages/Facial';
 import PriceList from './pages/PriceList';
+import Nail from './pages/Nail';
+import Hair from './pages/Hair';
+import LaserSkin from './pages/LaserSkin';
 import './styles/globals.css';
 
 function App() {
@@ -22,11 +25,12 @@ function App() {
             <Route path="/face" element={<Facial />} />
             <Route path="/price-list" element={<PriceList />} />
 
+            <Route path="/nail" element={<Nail />} />
+            <Route path="/hair" element={<Hair />} />
+            <Route path="/laser-skin" element={<LaserSkin />} />
+
             {/* Placeholder routes - can be implemented later */}
-            <Route path="/laser-skin" element={<PlaceholderPage title="Laser Skin Treatments" />} />
             <Route path="/massage" element={<PlaceholderPage title="Massage Therapy" />} />
-            <Route path="/nail" element={<PlaceholderPage title="Nail Services" />} />
-            <Route path="/hair" element={<PlaceholderPage title="Hair Services" />} />
             <Route path="/specials" element={<PlaceholderPage title="Special Offers" />} />
             <Route path="/about" element={<PlaceholderPage title="About Us" />} />
             <Route path="/blog" element={<PlaceholderPage title="Blog" />} />
